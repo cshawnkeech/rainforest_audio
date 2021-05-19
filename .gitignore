@@ -1,6 +1,10 @@
 # data and img folders
 /data
 /img
+.DS_Store
+notebooks/.DS_Store
+notebooks/ARCHIVE_notebooks/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
