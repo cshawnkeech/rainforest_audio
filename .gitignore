@@ -1,9 +1,9 @@
-# data and img folders
+# data folders & other archive folders
 /data
-/img
 .DS_Store
 notebooks/.DS_Store
 notebooks/ARCHIVE_notebooks/
+img/ARCHIVE_img
 
 
 # Byte-compiled / optimized / DLL files
