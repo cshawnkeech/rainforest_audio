@@ -4,6 +4,7 @@
 notebooks/.DS_Store
 notebooks/ARCHIVE_notebooks/
 img/ARCHIVE_img
+*.wav
 
 
 # Byte-compiled / optimized / DLL files
