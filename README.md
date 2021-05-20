@@ -48,7 +48,7 @@ The previous example was the FFT for only one sample. Each audio file has been s
 
 The spectrogram below contains the same information as the plot above. Now time (1 second) is on the X axis, Frequency is on the Y axis, and the power at any given frequency/time is on the Z axis. A convolutional neural network performs quite well when provided data in this format.
 
-![spectrogram](/Users/christopherkeech/coding_projects/dsi_remote_pt/capstones/rainforest_audio/img/spectrogram.jpg)
+![spectrogram](./img/spectrogram.jpg)
 
 ## Frequency Reduction
 
@@ -78,7 +78,7 @@ Overall, the 24 species being detected have vocalizations that lie between **93.
 
 ## Confusion Matrix
 
-![mel_1_sec_confusion_matrix](/Users/christopherkeech/coding_projects/dsi_remote_pt/capstones/rainforest_audio/img/mel_1_sec_confusion_matrix.jpg)
+![mel_1_sec_confusion_matrix](./img/mel_1_sec_confusion_matrix.jpg)
 
 
 
