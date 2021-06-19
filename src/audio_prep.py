@@ -2,12 +2,27 @@ import tensorflow as tf
 from tensorflow import keras
 import tensorflow_io as tfio
 
+import numpy as np
+
+import os
+
+# System filepath setup
+import sys
+
+# add data folders to path
+sys.path.insert(1, '../data')
+sys.path.insert(1, '../src')
+sys.path.insert(1, '../img')
+
 
 def mel_1s_snapshot(input):
+    
+    sr = 48000
+    
+    a_tensor = tf.convert_to_tensor(input, dtype=tf.float32)
 
-    audio_tensor = tf.squeeze(input, axis=[-1])
+    tensor = tf.cast(a_tensor, tf.float32)
 
-    tensor = tf.cast(audio_tensor, tf.float32)
 
     spectrogram = tfio.experimental.audio.spectrogram(
         tensor,
@@ -21,6 +36,9 @@ def mel_1s_snapshot(input):
         rate=sr, 
         mels=128, 
         fmin=93.75,     # 20, 
-        fmax=11627.90) # 15000)
+        fmax=13687.5) # 15000)
     
-    return mel_spectrogram
+    reshape = tf.expand_dims(mel_spectrogram.numpy(), -1)
+    
+    return np.array(reshape)
+
